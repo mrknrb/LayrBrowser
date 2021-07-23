@@ -1,0 +1,34 @@
+﻿<Window x:Class="WPFSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFSample"
+        xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+        mc:Ignorable="d"
+        Title="Layr Browser" Height="450" Width="800"
+         WindowState="Maximized"
+        >
+
+
+    <Grid x:Name="MainGrid">
+        <TabControl Grid.Column="0" Grid.Row="1" >
+            <TabItem Header="Settings" x:Name="Tab1">               
+            </TabItem>
+            <TabItem Header="Settings" x:Name="Tab12">
+                <Button  x:Name="NewTa2">+</Button>
+            </TabItem>
+            <TabItem>
+                <TabItem.Template>
+                    <ControlTemplate>
+                        <Button  x:Name="NewTab">+</Button>
+                    </ControlTemplate>
+                </TabItem.Template>
+            </TabItem>
+        </TabControl>
+        
+
+    </Grid>
+
+
+</Window>
